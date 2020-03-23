@@ -1,28 +1,34 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <v-app>
+    <v-content>
+      <router-view></router-view>
+    </v-content>
+  </v-app>
 </template>
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
+<style lang="scss">
+.theme--light.v-application {
+  background: #654ea3;
+  background: -webkit-linear-gradient(to right, #eaafc8, #654ea3);
+  background: linear-gradient(to right, #eaafc8, #654ea3);
 }
-</script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.v-application a {
+    color: #1976d2;
+    text-decoration: none;
+}
+.v-application .link-disabled,
+.v-btn__content {
+  pointer-events: none;
+}
+.credentials {
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  width: 100%;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  a {
+    color: #ffffff !important;
+    font-weight: bold;
+  }
 }
 </style>

@@ -11,6 +11,10 @@
   background: #654ea3;
   background: -webkit-linear-gradient(to right, #eaafc8, #654ea3);
   background: linear-gradient(to right, #eaafc8, #654ea3);
+  height: 100%;
+  height: -moz-available;
+  height: -webkit-fill-available;
+  height: fill-available;
 }
 .v-application a {
     color: #1976d2;

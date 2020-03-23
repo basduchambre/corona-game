@@ -4,7 +4,7 @@
     <p class="text-center score-title">{{ getFinalScore }}</p>
     <p class="text-center">Share your score on social media and don't forget to keep your distance!</p>
     <social-sharing 
-      url="https://caronatalks.com/"
+      url="https://coronatalks.com/"
       :title="`I've scored ${getFinalScore} on the COVID-19 test. What is your score?`"
       :description="`I've scored ${getFinalScore} on the COVID-19 test. What is your score?`"
       :quote="`I've scored ${getFinalScore} on the COVID-19 test. What is your score?`"

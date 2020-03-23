@@ -7,6 +7,12 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faFacebook, faTwitter, faWhatsapp, faTelegram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import VueAnalytics from 'vue-analytics'
+
+Vue.use(VueAnalytics, {
+  id: 'UA-160450550-1',
+  checkDuplicatedScript: true
+})
 
 library.add(faEnvelope, faFacebook, faTwitter, faWhatsapp, faTelegram, faLinkedin)
 

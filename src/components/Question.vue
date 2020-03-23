@@ -9,8 +9,8 @@
     <a :href="`${getQuestion[routeParams].source}`" target="_blank">
       <v-btn text class="mt-5 caption">View source <v-icon>mdi-open-in-new</v-icon></v-btn>
     </a>
-    <img src="@/assets/tick.png" class="tick" alt="tick" />
-    <img src="@/assets/cross.png" class="cross" alt="cross" />
+    <img src="@/assets/tick.png" class="icon tick" alt="tick" />
+    <img src="@/assets/cross.png" class="icon cross" alt="cross" />
   </div>
 </template>
 
@@ -20,9 +20,7 @@ import router from '@/router';
 export default {
   data() {
     return {
-      questionId: this.$route.params.id,
-      sourceLink: null,
-      questionAmount: null,
+      questionId: this.$route.params.id
     }
   },
   computed: {
@@ -96,6 +94,7 @@ export default {
         return false;
       }
       this.$store.commit('ENABLE_QUESTION', id + 1)
+
     }
   }
 }
@@ -131,8 +130,7 @@ export default {
 .question-title {
   text-transform: uppercase;
 }
-.tick,
-.cross {
+.icon {
   position: absolute;
   top: 50%;
   left: 50%;

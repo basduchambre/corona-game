@@ -23,7 +23,7 @@ export default new Vuex.Store({
       },
       {
         id: 1,
-        question: 'There are already more than 150.000 COVID-19 cases known',
+        question: 'There are already more than 1.000.000 COVID-19 cases known',
         answer: false,
         givenAnswer: null,
         disabled: false,
@@ -50,7 +50,7 @@ export default new Vuex.Store({
       },
       {
         id: 4,
-        question: 'Severe headache is one of the main covid-19 symptoms',
+        question: 'Severe headache is one of the main COVID-19 symptoms',
         answer: false,
         givenAnswer: null,
         disabled: true,
@@ -74,9 +74,35 @@ export default new Vuex.Store({
         disabled: true,
         source: 'https://www.journalofhospitalinfection.com/article/S0195-6701(20)30046-3/fulltext',
         score: null
-      }
+      },
+      {
+        id: 7,
+        question: 'One of COVID-19 symptoms is lost sense of smell and taste',
+        answer: true,
+        givenAnswer: null,
+        disabled: true,
+        source: 'https://www.nytimes.com/2020/03/22/health/coronavirus-symptoms-smell-taste.html',
+        score: null
+      },
+      {
+        id: 8,
+        question: 'Due to COVID-19 outbreak, Chinese carbon emissions declined by 150 metric tones',
+        answer: true,
+        givenAnswer: null,
+        disabled: true,
+        source: 'https://www.nytimes.com/2020/02/26/climate/nyt-climate-newsletter-coronavirus.html',
+        score: null  
+      },
+      {
+        id: 9,
+        question: 'Scientists have already created a vaccine against COVID-19',
+        answer: false,
+        givenAnswer: null,
+        disabled: true,
+        source: 'https://www.ecdc.europa.eu/en/novel-coronavirus-china/questions-answers',
+        score: null  
+      },
     ],
-    score: null
   },
   getters: {
     getQuestion: state => {
